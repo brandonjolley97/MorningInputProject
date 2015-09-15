@@ -22,13 +22,19 @@ public class InputController
 		String myInput;
 		myInput = inputScanner.next();
 		inputScanner.nextLine();
-		System.out.println("Hello there " + myInput + ".  Shall we play a game?");
+		System.out.println("Hello there " + myInput + ".  How are you feeling today?");
+		String feelInput;
+		feelInput = inputScanner.next();
+		inputScanner.nextLine();
+		System.out.println("I see.  You feel " + feelInput + "?  That is interesting.");
 		System.out.println("I see you typed only your first name.  Can you tell me your last as well?");
 		String fullName = inputScanner.nextLine();
 		System.out.println("Your full name is " + myInput + " " + fullName + "?");
 		System.out.println("My name is Java");
-		System.out.println("How old are you?");
-		int age = inputScanner.nextInt();
-		System.out.println("You are " + age + " years old?  Perfect.");
+		System.out.println("Shall we play a game?");
+		String ansInput;
+		ansInput = inputScanner.next();
+		inputScanner.nextLine();
+		System.out.println(ansInput + "?  Are you sure?  Then let's begin.");
 	}
 }
